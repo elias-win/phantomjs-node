@@ -1,0 +1,25 @@
+{
+  "author": "Elias Winberg <elias-winberg@outlook.com>",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.4.0",
+    "phantomjs": "^1.9.18"
+  },
+  "dependencies": {
+    "phantomjs-prebuilt": "^2.1.7",
+    "q": "^1.4.1"
+  },
+  "description": "PhantomJS integration module",
+  "homepage": "https://github.com/elias-winberg/phantomjs-node",
+  "license": "MIT",
+  "main": "phantom.js",
+  "name": "phantom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elias-winberg/phantomjs-node.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "version": "0.0.1"
+}
