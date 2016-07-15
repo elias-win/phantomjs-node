@@ -34,6 +34,12 @@ var COMMANDS = {
       object[command.args[0]] = command.args[1];
     }
     return object[command.args[0]];
+  },
+  'setting': function (object, command) {
+    if (command.args.length > 1) {
+      object.settings[command.args[0]] = command.args[1];
+    }
+    return object.settings[command.args[0]];
   }
 };
 
