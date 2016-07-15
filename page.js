@@ -49,6 +49,10 @@ Page.prototype.property = function () {
     return this.execute('property', [].slice.call(arguments));
 };
 
+Page.prototype.setting = function () {
+    return this.execute('setting', [].slice.call(arguments));
+};
+
 ASYNC_METHODS.forEach(function (method) {
     Page.prototype[method] = function () {
         return this.invokeAsyncMethod.apply(this, [method].concat([].slice.call(arguments)));

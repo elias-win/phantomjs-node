@@ -269,6 +269,28 @@ describe('Page', function () {
         });
     });
 
+    it('#property(\'javascriptEnabled\', false) sets the setting', function (done) {
+        let page;
+        phantom.createPage().then(function (instance) {
+            page = instance;
+            return page.setting('javascriptEnabled', false);
+        }).then(function () {
+            return page.setting('javascriptEnabled');
+        }).then(function (javascriptEnabled) {
+            expect(javascriptEnabled).toBe(false);
+            done();
+        });
+    });
+
+    it('#setting(\'javascriptEnabled\') returns the setting', function (done) {
+        phantom.createPage().then(function (page) {
+            return page.setting('javascriptEnabled');
+        }).then(function (javascriptEnabled) {
+            expect(javascriptEnabled).toBe(true);
+            done();
+        });
+    });
+
     it('#switchToFrame() switches to a frame', function (done) {
         let page;
         phantom.createPage().then(function (instance) {
