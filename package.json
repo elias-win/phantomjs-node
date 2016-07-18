@@ -2,8 +2,7 @@
   "author": "Elias Winberg <elias-winberg@outlook.com>",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-jasmine": "^2.4.0",
-    "phantomjs": "^1.9.18"
+    "gulp-jasmine": "^2.4.0"
   },
   "dependencies": {
     "phantomjs-prebuilt": "^2.1.7",
